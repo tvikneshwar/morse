@@ -8,7 +8,7 @@
  */
   
 // Assign a name to the digital pin 12
-unsigned int led_pin = 12;
+//unsigned int led_pin = 12;
  
 // Declare an array named letters that holds addresses of string literals 
 // (i.e. an array of pointers to strings composed of dots and dashes) 
@@ -35,8 +35,8 @@ bool done = false;
  */
 void setup() {
   // Set the LED to output
-  pinMode(led_pin, OUTPUT);
-   
+  //pinMode(led_pin, OUTPUT); // arduino
+   pinMode(LED_BUILTIN, OUTPUT);//esp8266 board
   // Open the serial port and set the data transmission rate to 9600 bits 
   // per second. 9600 is the default baud rate for Arduino.
   Serial.begin(9600); 
